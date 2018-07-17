@@ -7,7 +7,14 @@ To start:
 * Get a study number from me;
 * Fill out `this form <https://goo.gl/forms/jDwL5DFZEJAmim8D2>`_;
 * Get a consent form from me, ask any questions, sign it.
-* Check your setup.
+* Check your setup, by making a new Notebook:
+
+    * Windows, with Anaconda - open Anaconda Prompt.  Type ``jupyter
+      notebook``.
+    * Mac, with Anaconda - open Terminal.app (maybe from Spotlight).  Type
+      ``jupyter notebook``.
+
+  Any problems, ask for help.
 
 ********************************
 What is data science.  Why? How?
