@@ -1,17 +1,33 @@
 ---
 # YAML metadata
-title: "Bad science, and how to avoid it"
+title: "Why data science?"
 bibliography: les_pilot.bib
 ---
 
-# Reproducibility crisis
+# What is data science?
 
-![](images/ioannidis_title.png)\
+> Data Science is about drawing useful conclusions from large and diverse data
+> sets through exploration, prediction, and inference.
 
-* http://dx.doi.org/10.1371/journal.pmed.0020124
-* http://matthew-brett.github.io/teaching/ioannidis_2005.html
+[Berkeley textbook for Foundations of Data
+Science](https://www.inferentialthinking.com/chapters/01/what-is-data-science)
 
-# Begley and Ellis 2012
+# Why is it important?
+
+> ... the really important intellectual event of the next fifty years"
+> -- Donoho (2015) "50 years of data science".
+
+# What does it involve?
+
+> ... what data scientists do is make discoveries while swimming in data ...
+> At ease in the digital realm, they are able to bring structure to large
+> quantities of formless data and make analysis possible. ... Data scientists’
+> most basic, universal skill is the ability to write code.
+
+Davenport & Patil (2012) "Data Scientist: The Sexiest Job of the 21st Century"
+Havard Business Review.
+
+# It's about getting the answer right
 
 Scientists at Amgen (a drug company) tried to reproduce findings from 53
 "landmark" studies.
@@ -26,44 +42,14 @@ Of 53 studies, only 6 replicated (11%).
 Glenn Begley and Lee Ellis (2012) "Raise standards for preclinical cancer
 research" Nature 483 pp. 531–533
 
-# Cargo cult science
-
-> In the South Seas there is a cargo cult of people. During the war they saw
-> airplanes land with lots of good materials, and they want the same thing to
-> happen now. So they've arranged to imitate things like runways, to put fires
-> along the sides of the runways, to make a wooden hut for a man to sit in,
-> with two wooden pieces on his head like headphones and bars of bamboo
-> sticking out like antennas —-- he's the controller -- and they wait for the
-> airplanes to land.  They're doing everything right. The form is perfect
-> [...]. But it doesn't work.
-
-[Richard Feynman](http://en.wikiquote.org/wiki/Richard_Feynman) (1974) Cargo Cult Science.
-
-# The SCHAT principles
-
-* Sceptical,
-* Careful,
-* Honest And
-* Transparent.
-
-# Sceptical
+# It's about transparency
 
 \centerline{\includegraphics[height=2.5in]{images/nullius_in_verba.jpg}}
 
 (by kladcat under [CC BY 2.0](http://creativecommons.org/licenses/by/2.0), via
 Wikimedia Commons)
 
-# Sceptical
-
-> Science alone of all the subjects contains within itself the lesson of the
-> danger of belief in the infallibility of the greatest teachers in the
-> preceding generation... Learn from science that you must doubt the experts
-> ...
-> Science is the belief in the ignorance of experts
-
-Richard Feynman, What is Science? (1969)
-
-# Careful
+# Transparency
 
 > The scientific method's central motivation is the ubiquity of error - the
 > awareness that mistakes and self-delusion can creep in absolutely anywhere
@@ -73,85 +59,47 @@ Richard Feynman, What is Science? (1969)
 Donoho, David L, et al. 2009. Reproducible research in computational
 harmonic analysis. *Computing in Science & Engineering* 11, 8--18.
 
-# Careful
+# It's about engagement with modern data
 
-> The first principle is that you must not fool yourself—and you are the
-> easiest person to fool. So you have to be very careful about that. After
-> you've not fooled yourself, it's easy not to fool other scientists. You just
-> have to be honest in a conventional way after that.
+\centerline{\includegraphics[height=3in]{images/Weapons_of_Math_Destruction.jpg}}
 
-Richard Feynman, Cargo Cult Science (1974)
+# Data journalism
 
-# Honest
+\centerline{\includegraphics[width=5in]{images/propublica.png}}
 
-> It's a kind of scientific integrity, a principle of scientific thought that
-> corresponds to a kind of utter honesty --- a kind of leaning over backwards.
+Full analysis at https://github.com/propublica/compas-analysis
 
-Richard Feynman, Cargo Cult Science (1974)
+# Who is learning this?
 
-# Transparent
+* understand what algorithms are, how they are implemented as programs on
+  digital devices, and that programs execute by following precise and
+  unambiguous instructions;
+* create and debug simple programs;
+* use logical reasoning to predict the behaviour of simple programs
+* use technology purposefully to create, organise, store, manipulate and
+  retrieve digital content
 
-> For example, if you're doing an experiment, you should report everything
-> that you think might make it invalid--not only what you think is right about
-> it: other causes that could possibly explain your results; and things you
-> thought of that you've eliminated by some other experiment, and how they
-> worked --- to make sure the other fellow can tell they have been eliminated
-> ...  In summary, the idea is to try to give all of the information to help
-> others to judge the value of your contribution; not just the information
-> that leads to judgment in one particular direction or another.
+# Undergraduates
 
-Richard Feynman, Cargo Cult Science (1974)
+> ... academic institutions should encourage the development of a basic
+> understanding of data science in all undergraduates -- A 2018 report from
+> the US National Academies of Sciences, Engineering and Medicine.
 
-# The difference between true and false
+# What's the down side?
 
-> In studies for which findings could be reproduced, authors had paid close
-> attention to controls, reagents, investigator bias and describing the
-> complete data set. For results that could not be reproduced, however, data
-> were not routinely analysed by investigators blinded to the experimental
-> versus control groups. Investigators frequently presented the results of one
-> experiment, such as a single Western-blot analysis. They sometimes said they
-> presented specific experiments that supported their underlying hypothesis,
-> but that were not reflective of the entire data set.
-
-Begley and Ellis (2012).
-
-# Easy errors are easy
-
-\centerline{\includegraphics[height=2in]{images/reinhart_rogoff_coding_error_0.png}}
-
-Reinhart & Rogoff (2010) American Economic Review. 100: 573–78.
-
-Herndon, Ash & Pollin (2014). Cambridge Journal of Economics. 38: 257–279
-
-Picketty (2013) [Capital in the Twenty-First
-Century](https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century#Allegation_of_data_errors).
-
-# Understanding by building
-
-"What I cannot create, I do not understand"
-
-Richard Feynman - found on his blackboard after his death.
+* Learning a new language (Python, or R)
+* [The value of
+  frustration](https://www.youtube.com/watch?v=JxwxefRAu70&feature=youtu.be&t=1803)
 
 # Computers are confusing
 
-* if you can, work with someone else;
+* always work with someone else if you can;
 * always get someone else to check what you did;
 * force yourself to get up and walk away;
 * always have a pencil and paper next to you.
 
-# The data analysis landscape
+# Today
 
-* Python
-* R
-
-# Plan from here
-
-* A dataset, and a problem.
-* Reproducibility is hard.
-* Algorithms as description and prescription.
-* An introduction to Python and data analysis.
-* Thinking about chance with simulation.
-* Using programming for simulation.
-* A solution to our problem.
-* Another problem, another simulation, another answer.
-* Exploring your own data.
+* pair coding: the navigator and the driver;
+* if you know what to do, help your partner.
+* ask me if you are stuck.
