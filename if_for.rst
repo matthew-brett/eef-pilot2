@@ -1,35 +1,8 @@
-#################
-Print, If and For
-#################
+##########
+If and For
+##########
 
 .. code-links:: clear
-
-*****
-Print
-*****
-
-``print`` is useful function:
-
-.. nbplot::
-
-    >>> type(print)
-    <class 'builtin_function_or_method'>
-
-It prints out the values that you pass it, such as strings or numbers.
-
-.. nbplot::
-
-    >>> print(10)
-    10
-    >>> my_name = "Matthew"
-    >>> print(my_name)
-    Matthew
-
-This can be useful in the Notebook to show values as we execute things within
-a cell.
-
-.. for as "do something N times"
-   if
 
 **
 If
@@ -38,9 +11,6 @@ If
 We have already seen *assignment* statements (:doc:`assignment`).  We saw that
 they have the form: LHS ``=`` RHS, where the LHS is a variable name and the
 RHS is an expression.
-
-We saw expressions on their own at the end of Notebook cells, to show us a
-value.
 
 Now we add a couple of essential statements you will use all the time: ``if``
 statements and ``for`` statements.
@@ -107,6 +77,23 @@ the left by the number on the right.  Here are some examples:
     >>> 13 % 13
     0
 
+You can test if one number is divisible by another number, like this:
+
+.. nbplot::
+
+    >>> x = 12
+    >>> # Is x divisible by 4?
+    >>> # If it is, then x % 4 will be 0
+    >>> x % 4 == 0
+    True
+
+.. nbplot::
+
+    >>> x = 13
+    >>> # Now x % 4 gives 1
+    >>> x % 4 == 0
+    False
+
 The exercise is to write an ``if`` statement that prints "yes" if the number
 ``x`` is exactly divisible by 7, and prints nothing otherwise.  Test your code
 by setting various values of ``x``, and running the cell.
@@ -125,32 +112,22 @@ looks like this:
 
 .. nbplot::
 
-    >>> for i in range(10):
+    >>> my_list = [1, 3, 5]
+    >>> for value in my_list:
     ...     print(i)
     ...
-    0
     1
-    2
     3
-    4
     5
-    6
-    7
-    8
-    9
 
-There are several new things here.  Notice ``range(10)``.  This looks like a
-function, and it looks like it returns 10 numbers, starting at 0 and
-continuing through to 9.   That's good enough for our purposes.
-
-Next we see that the for statement is rather like the ``if`` statement.  It
+We see that the for statement is rather like the ``if`` statement.  It
 has form:
 
 * ``for`` followed by
 * a variable name (in this case ``i``, called the *loop variable*) followed
   by:
-* an expression that retuns a series of things (``range(10)`` returns a series
-  of numbers from 0 through 9) followed by:
+* an expression that evaluates to a sequence of things - in our case, the list
+  ``[1, 3, 5]``;
 * ``:`` (a colon) followed by
 * an indented *block* of code (``    print(i)``)
 
@@ -158,18 +135,91 @@ For statments are just a little more complicated than `if` statements, and it
 is worth going through the logic carefully.  Read the for statement above like
 this:
 
-* in the first iteration of the loop, set ``i`` to have value 0.  Then print
-  ``i``;
-* in the second iteration of the loop, set ``i`` to have value 1.  Then print
-  ``i``;
-* in the third iteration of the loop, set ``i`` to have value 2.  Then print
-  ``i``;
+* in the first iteration of the loop, set ``value`` to have value 1.  Then print
+  ``value``;
+* in the second iteration of the loop, set ``value`` to have value 3.  Then
+  print ``value``;
+* in the third iteration of the loop, set ``value`` to have value 5.  Then
+  print ``value``;
 
-and so on.
+Put another way, the ``for`` loop above does exactly the same as:
 
-Let's try some exercises.
+.. nbplot::
 
-Use a ``for`` loop to add up all the numbers between 0 and 10.
+    >>> # First time through the loop
+    >>> value = 1
+    >>> print(value)
+    >>> # Second time through the loop
+    >>> value = 1
+    >>> print(value)
+    >>> # Third time through the loop
+    >>> value = 1
+    >>> print(value)
 
-Use a ``for`` loop to count how many numbers from 0 through 99 that are
-divisible by both 7 and 4.
+********
+Exercise
+********
+
+Make a list of all the odd numbers between 1 and 9 inclusive.
+
+Use a ``for`` loop to print out each of these numbers.
+
+Use a ``for`` loop to print out the sum of all these numbers.  Your loop will
+look something like this::
+
+    >>> # A variable to hold the running total of the numbers
+    >>> total = 0
+    >>> for value in odd_numbers:
+    ...     "Do something here"
+    ...
+    >>> total
+    25
+
+Use a ``for`` loop to count how many odd numbers between 1 and 9 inclusive are
+divisible by 3.
+
+*****
+Range
+*****
+
+Sometimes we want to use many more than a few goes round the for loop.  For
+example, maybe I want to do the same thing 100 times.  I could type in a huge
+list with 100 elements, as in ``my_list = [0, 1, 2, 3, 4, .. ]`` and so on.
+That seems pretty boring.  Is there an automatic way to do this?
+
+Yes!  It's the ``range`` function.
+
+Here is ``range`` in action:
+
+.. nbplot::
+
+    >>> my_range = range(5)
+    >>> my_range
+    range(0, 5)
+
+This is a slightly odd type of value, that will give me all the numbers
+starting a 0, and going up to, but not including, 5.  We can convert this
+thing into a list to show these numbers:
+
+.. nbplot::
+
+    >>> my_numbers = list(my_range)
+    >>> my_numbers
+    [0, 1, 2, 3, 4]
+
+Notice the 4 - up to *but not including* 5.
+
+********
+Exercise
+********
+
+Use a ``for`` loop to print out the sum of the numbers from 0 to 40,
+inclusive.  Your loop will look something like this::
+
+    >>> # A variable to hold the running total of the numbers
+    >>> total = 0
+    >>> for value in ?
+    ...     "Do something here"
+    ...
+    >>> total
+    820
