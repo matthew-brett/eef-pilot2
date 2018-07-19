@@ -6,3 +6,7 @@ _build/
 *_exercise.rst
 *_solution.rst
 *_code.py
+
+# Pytest
+.pytest_cache/
+__pycache__/
