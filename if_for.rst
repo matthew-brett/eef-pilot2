@@ -188,9 +188,15 @@ look something like this::
     >>> # A variable to hold the running total of the numbers
     >>> total = 0
     >>> for value in odd_numbers:
-    ...     "Do something here"
+    ...     # The first time through the loop I should get get 1
+    ...     # The second time through the loop I get 4 (1 + 3 == 4)
+    ...     # The third time through the loop I get 9 (4 + 5 == 9)
+    ...     # The fourth time through the loop I get 16 (9 + 7 == 16)
+    ...     # The fifth time through the loop I get 25 (16 + 9 == 25)
+    ...     # Do something here to modify total
+    ...     print("Current total is", total)
     ...
-    >>> total
+    >>> print(total)
     25
 
 Use a ``for`` loop to count how many odd numbers between 1 and 9 inclusive are
