@@ -23,9 +23,7 @@ Notebooks from class
 ********************
 
 * :download:`if_and_for_futz.ipynb`
-* :download:`assignment_numbers_strings_futz.ipynb`
-* :download:`comparison_futz.ipynb`
-* :download:`list_futz.ipynb`
+* :download:`function_futz.ipynb`
 
 ********
 Homework
