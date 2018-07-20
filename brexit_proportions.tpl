@@ -73,6 +73,7 @@ Leave voter) or 0 (for Remain voter):
 
 .. nbplot::
 
+    >>> #: The random module
     >>> def get_0_or_1(prob_of_1):
     ...     # Return 0 or 1, where probability of 1 is given by prob_of_1
     ...     # To start with, we'll call this function setting prob_of_1 to 0.5
